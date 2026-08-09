@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "delegation_id",
+    "principal_id",
+    "delegate_id",
+    "authorities",
+    "capabilities",
+    "domains",
+    "allowed_action_ids",
+    "issued_at",
+    "not_before",
+    "expires_at",
+    "max_spend",
+    "can_redelegate",
+    "depth",
+    "max_depth",
+    "parent_delegation_id",
+    "parent_delegation_digest",
+    "status",
+    "revoked_at",
+    "revocation_reason",
+    "delegation_digest"
+  ],
+  "title": "Neuruh Authority Delegation Contract v0.1",
+  "type": "object"
+}

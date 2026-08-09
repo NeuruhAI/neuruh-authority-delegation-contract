@@ -1,0 +1,31 @@
+{
+  "allowed_action_ids": [
+    "act-synthetic"
+  ],
+  "authorities": [
+    "operator"
+  ],
+  "can_redelegate": false,
+  "capabilities": [
+    "synthetic.tool"
+  ],
+  "delegate_id": "human-synthetic",
+  "delegation_digest": "sha256:c40bc08eb0cc6d4a8149ece8000e0a52d551671b0375c6db11d061932e154681",
+  "delegation_id": "del-synthetic",
+  "depth": 0,
+  "domains": [
+    "synthetic-domain"
+  ],
+  "expires_at": "2026-08-09T20:00:00Z",
+  "issued_at": "2026-08-09T19:00:00Z",
+  "max_depth": 0,
+  "max_spend": 10.0,
+  "not_before": "2026-08-09T19:00:00Z",
+  "parent_delegation_digest": null,
+  "parent_delegation_id": null,
+  "principal_id": "principal-synthetic",
+  "revocation_reason": null,
+  "revoked_at": null,
+  "schema_version": "neuruh.authority-delegation-contract.v0.1",
+  "status": "active"
+}

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neuruh-authority-delegation-contract"
+version = "0.1.0a0"
+description = "Fail-closed bounded authority delegation contract for governed agent systems."
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+
+[project.scripts]
+neuruh-authority-delegation = "neuruh_authority_delegation_contract.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

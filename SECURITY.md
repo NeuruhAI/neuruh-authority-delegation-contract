@@ -1,0 +1,1 @@
+Delegation digests provide tamper evidence, not identity attestation or signatures. Production systems must bind identities and signatures separately. This public package deliberately has no network, credential, shell, or execution capability.

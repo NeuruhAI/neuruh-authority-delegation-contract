@@ -1,0 +1,1 @@
+Public: generic delegation contract semantics, subset verifier, revocation, authorization check, CLI, synthetic fixtures. Private: production RBAC, real employee identities, production authority graph, credentials, commercial thresholds, routing, private policies, customer data.
