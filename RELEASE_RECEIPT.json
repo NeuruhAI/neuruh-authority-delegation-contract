@@ -19,23 +19,23 @@
     "proprietary_scoring": false
   },
   "qualification": {
-    "cli_smoke": "PENDING",
-    "git_history_gitleaks": "PENDING",
+    "cli_smoke": "PASS",
+    "git_history_gitleaks": "PASS",
     "license": "Apache-2.0",
-    "private_implementation_reference_scan": "PENDING",
-    "source_secret_pattern_scan": "PENDING",
-    "synthetic_end_to_end": "PENDING",
+    "private_implementation_reference_scan": "PASS",
+    "source_secret_pattern_scan": "PASS",
+    "synthetic_end_to_end": "PASS",
     "synthetic_examples_only": true,
     "tests": {
-      "count": 0,
-      "status": "PENDING"
+      "count": 44,
+      "status": "PASS"
     },
-    "wheel_build": "PENDING"
+    "wheel_build": "PASS"
   },
-  "qualified_at": null,
+  "qualified_at": "2026-08-09T19:40:50.998850+00:00",
   "release_version": "v0.1.0-alpha",
   "repository": "NeuruhAI/neuruh-authority-delegation-contract",
   "schema_version": "neuruh.public-release-receipt.v1",
-  "status": "QUALIFIED_FOR_PRIVATE_STAGING",
-  "tested_source_commit": null
+  "status": "APPROVED_FOR_PUBLIC_RELEASE",
+  "tested_source_commit": "c4e33f9c46e8abe0a91f11dc59bd7ebc4bb0a7d8"
 }
