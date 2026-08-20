@@ -1,17 +1,34 @@
+from importlib.metadata import PackageNotFoundError, version as _metadata_version
+
 from .core import (
     SCHEMA_VERSION,
-    DelegationValidationError,
+    STATUSES,
     AuthorityDelegation,
-    create_root_delegation,
-    derive_delegation,
-    verify_child,
-    revoke_delegation,
+    DelegationValidationError,
     authorize,
     canonical_json,
+    create_root_delegation,
+    derive_delegation,
+    revoke_delegation,
     sha256_ref,
+    verify_child,
 )
-__version__ = "0.1.0a0"
+
 __all__ = [
-    "SCHEMA_VERSION","DelegationValidationError","AuthorityDelegation","create_root_delegation",
-    "derive_delegation","verify_child","revoke_delegation","authorize","canonical_json","sha256_ref",
+    "SCHEMA_VERSION",
+    "STATUSES",
+    "AuthorityDelegation",
+    "DelegationValidationError",
+    "authorize",
+    "canonical_json",
+    "create_root_delegation",
+    "derive_delegation",
+    "revoke_delegation",
+    "sha256_ref",
+    "verify_child",
 ]
+
+try:
+    __version__ = _metadata_version("neuruh-authority-delegation-contract")
+except PackageNotFoundError:  # running from a source tree that was never installed
+    __version__ = "unknown"

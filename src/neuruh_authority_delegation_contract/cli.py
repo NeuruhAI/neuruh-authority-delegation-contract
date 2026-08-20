@@ -1,9 +1,11 @@
 from __future__ import annotations
+import sys as _sys
+from .core import DelegationValidationError
 import argparse,json
 from pathlib import Path
 from .core import AuthorityDelegation, authorize
 
-def main(argv=None):
+def _main(argv=None):
     p=argparse.ArgumentParser(prog="neuruh-authority-delegation")
     sp=p.add_subparsers(dest="cmd",required=True)
     for name in ("validate","digest","inspect"):
@@ -20,4 +22,16 @@ def main(argv=None):
     else:
         ok=authorize(obj,now=a.now,delegate_id=a.delegate_id,authority=a.authority,capability=a.capability,domain=a.domain,action_id=a.action_id,spend=a.spend)
         print(json.dumps({"authorized":ok,"delegation_id":obj.delegation_id},sort_keys=True))
-if __name__=="__main__": main()
+
+
+def main(argv=None):
+    """Report bad input as a message and an exit code, never as a traceback."""
+    try:
+        return _main(argv)
+    except (OSError, ValueError, DelegationValidationError) as exc:
+        print(f"error: {exc}", file=_sys.stderr)
+        return 2
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
