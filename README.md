@@ -1,5 +1,7 @@
 # Neuruh Authority Delegation Contract
 
+[![ci](https://github.com/NeuruhAI/neuruh-authority-delegation-contract/actions/workflows/ci.yml/badge.svg)](https://github.com/NeuruhAI/neuruh-authority-delegation-contract/actions/workflows/ci.yml)
+
 Public Commons Release 016. A deterministic, fail-closed contract for bounded delegation of authority.
 
 A delegation names the principal, delegate, authority classes, capabilities, domains, optional action IDs, time window, spend ceiling, re-delegation permission, and maximum delegation depth.
